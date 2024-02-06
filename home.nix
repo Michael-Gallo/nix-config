@@ -20,9 +20,7 @@
   # environment.
   home.packages = with pkgs; [
   	discord
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
+	xclip
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -70,6 +68,8 @@
   #
   home.sessionVariables = {
     EDITOR = "nvim";
+    NIXPKGS_ALLOW_UNFREE=1;
+
   };
 
   programs.zsh = {
@@ -77,6 +77,9 @@
 	autocd = true;
 	enableAutosuggestions = true;
 	syntaxHighlighting.enable = true;
+	envExtra = ''
+	bindkey ^k autosuggest-accept
+	'';
   };
 
   programs.neovim = {
