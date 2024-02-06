@@ -110,6 +110,13 @@ programs.zsh.enable = true;
 
   };
 
+  fonts.packages = with pkgs; [
+	  ipafont
+	  kochi-substitute
+	  noto-fonts-cjk
+	  noto-fonts-extra
+	  source-code-pro
+  ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
