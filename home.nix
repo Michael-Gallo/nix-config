@@ -15,9 +15,11 @@
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
+  	discord
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -75,6 +77,15 @@
 	autocd = true;
 	enableAutosuggestions = true;
 	syntaxHighlighting.enable = true;
+  };
+
+  programs.neovim = {
+  	enable = true;
+	viAlias = true;
+	vimAlias = true;
+	extraConfig = ''
+	set number relativenumber
+	'';
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
