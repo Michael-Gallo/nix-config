@@ -6,6 +6,28 @@
   home.username = "mike";
   home.homeDirectory = "/home/mike";
 
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+	clock-format = "12h";
+      };
+      "org/cinnamon/desktop/interface" = {
+        clock-use-24h=false;
+      };
+      "org/cinnamon/desktop/sound" = {
+      	event-sounds=false;
+      };
+      "org/cinnamon/desktop/keybindings/wm" ={
+	maximize = "<Super>Up";
+      };
+      "org/cinnamon/desktop/keybindings/media-keys" ={
+      	www =  "<Super>b";
+	terminal = ["<Primary><Alt>t" "<Super>Return"];
+      };
+    };
+  };
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
