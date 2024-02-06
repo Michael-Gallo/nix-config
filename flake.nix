@@ -3,14 +3,28 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
   };
 
-  outputs = { self, nixpkgs }@inputs:
-    {
+  outputs = { self, nixpkgs, home-manager }@inputs:
+	let specialArgs = {
+		inherit inputs;
+	};
+    in {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          modules = [ ./configuration.nix];
+          modules = [
+	  ./configuration.nix
+	  home-manager.nixosModules.home-manager
+           {
+          home-manager = {
+            useUserPackages = true;
+            users.mike = import ./home.nix;
+            extraSpecialArgs = specialArgs;
+          };
+	  }
+	  ];
         };
       };
     };
