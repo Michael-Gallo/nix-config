@@ -85,10 +85,8 @@ programs.zsh.enable = true;
     shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox
       neovim
       git
-    #  thunderbird
     ];
   };
 
