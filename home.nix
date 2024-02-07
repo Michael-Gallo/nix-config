@@ -51,7 +51,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-  vscode
 	direnv # used byvscode
   discord
 	xclip
@@ -119,11 +118,28 @@
 
   programs.neovim = {
   	enable = true;
-	viAlias = true;
-	vimAlias = true;
-	extraConfig = ''
-	set number relativenumber
-	'';
+    viAlias = true;
+    vimAlias = true;
+    extraConfig = ''
+    set number relativenumber
+    '';
+  };
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      vscodevim.vim
+      golang.go
+      bbenoist.nix
+      ms-python.python
+    ];
+    userSettings = {
+      "editor.fontSize" = 14;
+      "editor.minimap.enabled" = false;
+      "git.autofetch" = true;
+      "editor.lineNumbers" = "relative";
+      "vim.useSystemClipboard" = true;
+    };
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
