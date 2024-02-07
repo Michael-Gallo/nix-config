@@ -139,6 +139,7 @@
       "git.autofetch" = true;
       "editor.lineNumbers" = "relative";
       "vim.useSystemClipboard" = true;
+      "git.confirmSync" = false;
     };
   };
   # Let Home Manager install and manage itself.
