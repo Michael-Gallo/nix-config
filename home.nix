@@ -9,22 +9,32 @@
   dconf = {
     enable = true;
     settings = {
+      "org/x/apps/portal/color-scheme" = {
+        color-scheme = "prefer-dark";
+      };
+      # CINNAMON
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
 	clock-format = "12h";
       };
       "org/cinnamon/desktop/interface" = {
         clock-use-24h=false;
+	gtk-theme = "Mint-Y-Dark-Teal";
+	icon-theme = "Mint-Y-Teal";
+	cursor-theme = "Bibata-Modern-Classic";
       };
       "org/cinnamon/desktop/sound" = {
       	event-sounds=false;
       };
       "org/cinnamon/desktop/keybindings/wm" ={
-	maximize = "<Super>Up";
+	maximize = ["<Super>Up" "<Super>f"];
       };
       "org/cinnamon/desktop/keybindings/media-keys" ={
       	www =  "<Super>b";
 	terminal = ["<Primary><Alt>t" "<Super>Return"];
+      };
+      "org/cinnamon/theme" = {
+      	name = "Mint-L-Dark-Teal";
       };
     };
   };
