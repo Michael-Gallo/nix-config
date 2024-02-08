@@ -58,10 +58,11 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-	direnv # used byvscode
-  discord
-	xclip
-  firefox
+    brave
+    direnv # used by VScode
+    discord
+    xclip
+    firefox
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
