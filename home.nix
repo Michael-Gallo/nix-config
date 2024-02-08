@@ -32,6 +32,9 @@
       };
       "org/cinnamon/desktop/keybindings/wm" ={
         maximize = ["<Super>Up" "<Super>f"];
+        switch-to-workspace-down = [];
+        switch-to-workspace-up = ["<Alt>F1"];
+
       };
       "org/cinnamon/desktop/keybindings/media-keys" ={
       	www =  "<Super>b";
