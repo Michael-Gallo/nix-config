@@ -46,6 +46,9 @@
       "org/cinnamon/gestures" = {
         enabled = true;
       };
+      "org/cinnamon/muffin" = {
+        tile-maximize = true;
+      };
     };
   };
   # This value determines the Home Manager release that your configuration is
