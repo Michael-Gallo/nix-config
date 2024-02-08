@@ -13,6 +13,10 @@
         color-scheme = "prefer-dark";
       };
       # CINNAMON
+      "org/cinnamon" = {
+        panels-enabled = ["1:0:top"];
+        panels-height = ["1:30"];
+      };
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
         clock-format = "12h";
