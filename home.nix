@@ -67,6 +67,7 @@
     brave
     direnv # used by VScode
     discord
+    libreoffice
     xclip
     firefox
 
@@ -154,6 +155,7 @@
       "editor.lineNumbers" = "relative";
       "vim.useSystemClipboard" = true;
       "git.confirmSync" = false;
+      "terminal.integrated.allowChords" = false;
     };
   };
   # Let Home Manager install and manage itself.
