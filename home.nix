@@ -37,7 +37,7 @@
 
       };
       "org/cinnamon/desktop/keybindings/media-keys" ={
-      	www =  "<Super>b";
+      	www =  ["<Super>b"];
         terminal = ["<Primary><Alt>t" "<Super>Return"];
       };
       "org/cinnamon/theme" = {
