@@ -68,6 +68,7 @@
     direnv # used by VScode
     discord
     libreoffice
+    joplin-desktop
     xclip
     firefox
 
