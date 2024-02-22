@@ -157,6 +157,7 @@
       "vim.useSystemClipboard" = true;
       "git.confirmSync" = false;
       "terminal.integrated.allowChords" = false;
+      "keyboard.dispatch" = "keyCode";
     };
   };
   # Let Home Manager install and manage itself.
