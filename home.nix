@@ -158,6 +158,9 @@
       "git.confirmSync" = false;
       "terminal.integrated.allowChords" = false;
       "keyboard.dispatch" = "keyCode";
+      "vim.handleKeys" = {
+        "<C-p>" = false;
+      };
     };
   };
   # Let Home Manager install and manage itself.
