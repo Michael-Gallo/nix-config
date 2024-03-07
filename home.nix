@@ -49,6 +49,10 @@
       "org/cinnamon/muffin" = {
         tile-maximize = true;
       };
+      "org/cinnamon/settings-daemon/plugins/power" = {
+        lid-close-ac-action = "suspend";
+      };
+
     };
   };
   # This value determines the Home Manager release that your configuration is
