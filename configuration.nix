@@ -26,8 +26,8 @@
   # Try to use localtime
   services.localtimed.enable = true;
 
-  # Leave timezone as null so it can be changed imperatively (ie: on vacation)
-  time.timeZone = null;
+  # Set your time zone.
+  time.timeZone = "America/New_York";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
