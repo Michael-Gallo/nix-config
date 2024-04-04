@@ -23,6 +23,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  # Try to use localtime
+  services.localtimed.enable = true;
 
   # Leave timezone as null so it can be changed imperatively (ie: on vacation)
   time.timeZone = null;
