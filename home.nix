@@ -69,6 +69,7 @@
   # environment.
   home.packages = with pkgs; [
     brave
+    btop
     direnv # used by VScode
     discord
     libreoffice
