@@ -52,6 +52,9 @@
       "org/cinnamon/settings-daemon/plugins/power" = {
         lid-close-ac-action = "suspend";
       };
+      "org/gnome/desktop/a11y/applications" = {
+        screen-keyboard-enabled = false; 
+      };
 
     };
   };
