@@ -17,7 +17,7 @@
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  services.teamviewer.enable = true;
+  # services.teamviewer.enable = true;
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -27,9 +27,8 @@
 
   # Set your time zone.
   time.timeZone = null;
-
-  # Try to use localtime
-  services.localtimed.enable = true;
+  # probably should move to laptop config
+  services.automatic-timezoned.enable = true;
 
 
   # Select internationalisation properties.
@@ -54,8 +53,8 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.cinnamon.enable = true;
   # virtualbox settings
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "mike" ];
+  # virtualisation.virtualbox.host.enable = true;
+  # users.extraGroups.vboxusers.members = [ "mike" ];
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
