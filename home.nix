@@ -157,6 +157,7 @@
       golang.go
       bbenoist.nix
       ms-python.python
+      ms-python.vscode-pylance
     ];
     userSettings = {
       "editor.fontSize" = 14;
