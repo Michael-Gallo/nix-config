@@ -58,7 +58,7 @@
 
     };
   };
-  # This value determines the Home Manager release that your configuration is
+  # This value determines the Home Manager release that your configuration ijs
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
   #
@@ -75,6 +75,7 @@
     btop
     direnv # used by VScode
     discord
+    go
     libreoffice
     joplin-desktop
     xclip
