@@ -76,6 +76,9 @@
     direnv # used by VScode
     discord
     go
+    gopls
+    gcc
+    pkg-config
     libreoffice
     joplin-desktop
     xclip

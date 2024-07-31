@@ -165,7 +165,7 @@ programs.zsh.enable = true;
         CPU_MIN_PERF_ON_AC = 0;
         CPU_MAX_PERF_ON_AC = 100;
         CPU_MIN_PERF_ON_BAT = 0;
-        CPU_MAX_PERF_ON_BAT = 40;
+        CPU_MAX_PERF_ON_BAT = 100;
 
        #Optional helps save long term battery health
        START_CHARGE_THRESH_BAT0 = 75; # 40 and bellow it starts to charge
