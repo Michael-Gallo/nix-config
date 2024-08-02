@@ -1,5 +1,17 @@
 { config, pkgs, ... }:
 
+let myAliases = {
+    ls = "exa -a --color=always --group-directories-first --git --icons";
+    gmt = "go mod tidy";
+    vim = "nvim";
+    # Git
+    gp = "git push";
+    gs = "git status";
+    gcp = "git cherry-pick";
+    gc = "git commit";
+    gpoh = "git push origin HEAD";
+  };
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -76,6 +88,7 @@
     deluge
     direnv # used by VScode
     discord
+    eza # fork of exa
     go
     gopls
     gcc
@@ -143,6 +156,7 @@
 	autocd = true;
 	enableAutosuggestions = true;
 	syntaxHighlighting.enable = true;
+  shellAliases = myAliases;
 	envExtra = ''
 	bindkey ^k autosuggest-accept
 	'';
