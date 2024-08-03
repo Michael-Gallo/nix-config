@@ -56,9 +56,9 @@
   # virtualisation.virtualbox.host.enable = true;
   # users.extraGroups.vboxusers.members = [ "mike" ];
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -107,7 +107,7 @@ programs.zsh.enable = true;
   ];
 
   nix = {
-	package = pkgs.nixUnstable;
+	# package = pkgs.nixUnstable;
 	extraOptions = ''
 		experimental-features = nix-command flakes
 	'';

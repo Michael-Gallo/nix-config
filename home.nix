@@ -99,6 +99,7 @@ in
     unzip
     ventoy
     xclip
+    zed-editor
     # Development
     vulkan-headers
     libxkbcommon
@@ -161,7 +162,7 @@ in
   programs.zsh = {
 	enable = true;
 	autocd = true;
-	enableAutosuggestions = true;
+	autosuggestion.enable = true;
 	syntaxHighlighting.enable = true;
   shellAliases = myAliases;
 	envExtra = ''
