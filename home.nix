@@ -95,12 +95,19 @@ in
     gopls
     joplin-desktop
     libreoffice
-    pkg-config
     tldr
     unzip
     ventoy
     xclip
-
+    # Development
+    vulkan-headers
+    libxkbcommon
+    wayland
+    xorg.libX11
+    xorg.libXcursor
+    xorg.libXfixes
+    libGL
+    pkg-config
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
