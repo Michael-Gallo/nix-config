@@ -65,7 +65,7 @@ in
         lid-close-ac-action = "suspend";
       };
       "org/gnome/desktop/a11y/applications" = {
-        screen-keyboard-enabled = false; 
+        screen-keyboard-enabled = false;
       };
 
     };
@@ -89,17 +89,17 @@ in
     direnv # used by VScode
     discord
     eza # fork of exa
+    firefox
+    gcc
     go
     gopls
-    gcc
-    pkg-config
-    libreoffice
     joplin-desktop
-    xclip
-    firefox
+    libreoffice
+    pkg-config
     tldr
     unzip
     ventoy
+    xclip
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
