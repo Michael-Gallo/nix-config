@@ -148,6 +148,7 @@ programs.zsh.enable = true;
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
+  programs.kdeconnect.enable = true;
   # Laptop power settings (move to laptop.nix later)
   powerManagement = {
     enable = true;
