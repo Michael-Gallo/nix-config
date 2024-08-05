@@ -127,6 +127,7 @@ programs.zsh.enable = true;
 	  noto-fonts-cjk
 	  noto-fonts-extra
 	  source-code-pro
+	  nerdfonts
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
