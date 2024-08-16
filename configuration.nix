@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
@@ -69,6 +69,19 @@
     enable = true;
     nssmdns4 = true;
     openFirewall = true;
+  };
+
+# Automatic updates
+  system.autoUpgrade = {
+    enable = true;
+    flake =inputs.self.outPath;
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "-L" # print build logs
+    ];
+    dates = "02:00";
+    randomizedDelaySec = "45min";
   };
 
   # Enable sound with pipewire.
