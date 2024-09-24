@@ -99,7 +99,6 @@ in
     unzip
     ventoy
     xclip
-    zed-editor
     # Development
     vulkan-headers
     libxkbcommon
