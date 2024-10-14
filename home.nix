@@ -88,6 +88,7 @@ in
     deluge
     direnv # used by VScode
     discord
+    evolution
     eza # fork of exa
     firefox
     gcc
