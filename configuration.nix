@@ -85,7 +85,7 @@
   };
 
   # Enable sound with pipewire.
-  sound.enable = true;
+  # sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -144,7 +144,7 @@ programs.zsh.enable = true;
   fonts.packages = with pkgs; [
 	  ipafont
 	  kochi-substitute
-	  noto-fonts-cjk
+	  noto-fonts-cjk-sans
 	  noto-fonts-extra
 	  source-code-pro
 	  nerdfonts
