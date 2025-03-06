@@ -85,6 +85,7 @@ in
   home.packages = with pkgs; [
     brave
     btop
+    calc
     deluge
     direnv # used by VScode
     discord
